@@ -33,7 +33,7 @@ terraform_m/
 ```
 
 
-**Prerequisites**
+## Prerequisites
 
 Terraform CLI installed
 
@@ -52,7 +52,7 @@ Step 3: Apply Terraform Configuration
 `terraform apply`
 
 
-Confirm with yes when prompted.
+**Confirm with yes when prompted.**
 After this, the VPC, subnets, and route tables will be created in AWS.
 Terraform Apply Output
 <img width="1920" height="1028" alt="task1gerges part2png" src="https://github.com/user-attachments/assets/f8be16e5-c124-42d6-b40e-56d2dacb74fc" />
@@ -72,23 +72,23 @@ Creates 2 private subnets using count
 
 **Outputs:**
 
-public_subnet_id
+1.public_subnet_id
 
-private_subnet_ids (list)
+2.private_subnet_ids (list)
 
-Route Table Module (modules/route-table)
+3.Route Table Module (modules/route-table)
 
-Creates a Route Table
+4.Creates a Route Table
 
-Associates it with subnets (supports multiple subnets via count)
+5.Associates it with subnets (supports multiple subnets via count)
 
 Inputs:
 
-vpc_id
+1.vpc_id
 
-subnet_ids
+2.subnet_ids
 
-route_table_name
+3.route_table_name
 
 
 
@@ -107,6 +107,6 @@ Modular design allows easy reuse and scalability
 
 Modify CIDRs and AZs in variables.tf
 
-Can configure remote backend (S3 + DynamoDB) for state management
+** Can configure remote backend (S3 + DynamoDB) for state management **
 
 
