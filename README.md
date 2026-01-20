@@ -30,6 +30,8 @@ terraform_m/
 │       ├── main.tf
 │       └── variables.tf
 └── README.md
+```
+
 
 **Prerequisites**
 
