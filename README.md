@@ -35,11 +35,11 @@ terraform_m/
 
 ## Prerequisites
 
-Terraform CLI installed
+1. Terraform CLI installed
 
-AWS CLI installed and configured
+2. AWS CLI installed and configured
 
-IAM credentials with sufficient permissions
+3. IAM credentials with sufficient permissions
 
 **Deployment Instructions**
 Step 1: Initialize Terraform
@@ -58,17 +58,17 @@ Terraform Apply Output
 <img width="1920" height="1028" alt="task1gerges part2png" src="https://github.com/user-attachments/assets/f8be16e5-c124-42d6-b40e-56d2dacb74fc" />
 
 **Modules Overview**
-VPC Module (modules/vpc)
+1. VPC Module (modules/vpc)
 
-Creates a VPC
+2. Creates a VPC
 
-Outputs: vpc_id
+3. Outputs: vpc_id
 
-Subnet Module (modules/subnet)
+4. Subnet Module (modules/subnet)
 
-Creates 1 public subnet
+5. Creates 1 public subnet
 
-Creates 2 private subnets using count
+6. Creates 2 private subnets using count
 
 **Outputs:**
 
@@ -97,16 +97,16 @@ AWS Console View
 <img width="1920" height="1020" alt="task1gerges" src="https://github.com/user-attachments/assets/16db2872-6792-4d72-833b-66ba94297ed7" />
 
 
-Notes
+## Notes
 
-Public subnet has map_public_ip_on_launch = true
+**Public subnet has map_public_ip_on_launch = true**
 
-Private subnets do not get public IPs
+**Private subnets do not get public IPs**
 
-Modular design allows easy reuse and scalability
+**Modular design allows easy reuse and scalability**
 
-Modify CIDRs and AZs in variables.tf
+**Modify CIDRs and AZs in variables.tf**
 
-** Can configure remote backend (S3 + DynamoDB) for state management **
+**Can configure remote backend (S3 + DynamoDB) for state management**
 
 
